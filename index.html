@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>School Managment System</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<section id="general">
+			<div class="container">
+				<form id="main">
+				     	<!-- student name -->
+					<section id="labels">
+						<div class="from-control">
+							<label id="namel" for="name">Student Name</label>
+							<input id="name" class="text-line" class="box" type="text"  placeholder="Type Name" />
+						</div>
+						<!-- student name -->
+		
+						<!-- student id -->
+						<div class="from-control">
+							<label id="idNumberl" for="idNumber">Student ID  </label>
+							<input id="idNumber" class="text-line" class="box" type="number"  placeholder="12345678" />
+						</div>
+						<!-- student id -->
+		
+						<!-- student gdpa -->
+						<div class="from-control">
+							<label id="gdpal" for="gdpa">Student GDPA</label>
+							<input  id="gdpa" class="text-line" class="box" type="number" placeholder="0-4" />
+						</div>
+						<!-- student gdpa -->
+		
+						<!--button (add)-->
+							<button id="submit" class="add_button" type="submit" onclick="">Add</button>
+						<!--button (add)-->
+					
+					</section>
+					
+					<!--imge-->
+					<img id="system" src="system.jpg" alt="systemschool">
+					<!--imge-->
+
+				</form>
+			</div>
+
+			<section class="position">
+				<ul class="menu" id="">
+					<li></li>
+					<li></li>
+					<li></li>
+					<button id="box" type="submit" onclick="deleteStudent();">Delete</button>
+					<input type="text" id="idToRemove" placeholder="Number of student">
+					<button id="box" type="number" onclick="update();">Update Name</button>
+					<div id="search">
+						<input type="number" id="num" placeholder="Number of student">
+					</div>
+					<div id="input">
+						<label for="text">New information</label><br>
+						<input type="text" id="nameUp" placeholder="new name">
+						<input type="number" id="idUp" placeholder="new id">
+						<input type="number" id="gpaUp" placeholder="new gpa">
+						<label id="show"></label>
+					</div>
+					<button id="box" type="submit">Call us</button>
+					<button id="box" type="submit" onclick="makeList();">print</button>
+					<div id = "list">	
+					</div>
+				  </ul>
+			</section>
+		</section>
+		<script src="main.js"></script>
+	</body>
+</html>
